@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header_title">
+                <a href="#">HikaruCode</a>
+            </div>
+
+            <ul class="header_nav" id="js-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="header_hamburger" id="js-hamburger">
+                <span class="sp1" id="js-sp1"></span>
+                <span class="sp2" id="js-sp2"></span>
+                <span class="sp3" id="js-sp3"></span>
+            </button>
+
+        </header>
+
+        <main class="main">
+
+                <div class="top-image">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="top-image_640.jpg" />  <!-- 768以下では小さい画像を表示 -->
+                        <img src="top-image_1280.jpg" alt="" class="top">
+                    </picture>
+                </div>
+
+            <section id="about" class="wrapper" >
+                <h2>About</h2>
+                <div class="sec-about">
+                    <div><img src="About-image.jpg" alt=""></div>
+                    <div class="sec-about-p">
+                        <p>東北出身の駆け出しプログラマーです。</p>
+                        <p>趣味は漫画集めです。</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="skill" class="wrapper">
+                <h2>Skill</h2>
+
+                <div class="sec-skill">
+                    <div>
+                        <button id="modalOpen1" class="js-modal-button">Webデザイン</button>
+                        <p class="skill-p">シンプルで使いやすいデザインを構築できます。<br>ツールはFigmaを使用しています。</p>
+                    </div>
+                    <div>
+                        <button id="modalOpen2" class="js-modal-button">HTML/CSS</button>
+                        <p class="skill-p">レスポンシブに対応したWEBページの実装が可能です。</p>
+                    </div>
+                    <div>
+                        <button id="modalOpen3" class="js-modal-button">JavaScript</button>
+                        <p class="skill-p">WEBページに動きを与え、ユーザーエクスペリエンスを向上させます。</p>
+                    </div>
+                    <div>
+                        <button id="modalOpen4" class="js-modal-button">PHP</button>
+                        <p class="skill-p">データベースの接続を確立し、データの追加、更新、削除などの実装が可能です。</p>
+                    </div>
+                </div>
+
+
+
+                <div id="js-skill-modal1">  <!-- JSで操作 -->
+                    <div class="modal-content">
+                        <div class="modal-header1 modal-header">
+                            <p>Webデザイン</p>
+                            <span class="modalClose1 modalClose">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p>デザイン勉強中です。</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="js-skill-modal2">
+                    <div class="modal-content">
+                        <div class="modal-header2 modal-header">
+                            <p>HTML/CSS</p>
+                            <span class="modalClose2 modalClose">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p>アニメーション勉強中です。</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="js-skill-modal3">
+                    <div class="modal-content">
+                        <div class="modal-header3 modal-header">
+                            <p>JavaScript</p>
+                            <span class="modalClose3 modalClose">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <p>ゲーム開発勉強中です。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="works" class="wrapper">
+                <h2>Works</h2>
+                <div class="sec-works">
+                    <div>
+                        <div><a href="index.html" target="_blank"><img src="work1.PNG" alt=""></a></div>
+                        <p class="works-p">レトロゲーム風サイト</p>
+                    </div>
+                    <div>
+                        <div><a href="memo.php" target="_blank"><img src="work3.PNG" alt=""></a></div>
+                        <p class="works-p">メモ帳</p>
+                    </div>
+                    <div>
+                        <div><a href="post-images/post-images.php" target="_blank"><img src="work4.PNG" alt=""></a></div>
+                        <p class="works-p">画像投稿</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="wrapper">
+                <h2>Contact</h2>
+                <div class="sec-contact">
+                    <div>
+                        <div><a href="contactform.php" target="_blank"><button class="contact-b">お問い合わせ</button></a></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="pagetop">
+            <a href="#">▲TOP</a>
+        </div>
+
+        <footer class="footer">
+        </footer>
+
+        <script src="portfolio.js"></script>
+    </div>
+</body>
+
+</html>
+
+<
